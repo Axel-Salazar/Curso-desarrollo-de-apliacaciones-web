@@ -1,1 +1,103 @@
+#############
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Primer script de php";
+?> 
+
+</body>
+</html>
+
+#############
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$txt = "PHP";
+echo "Me gusta PHP!";
+?>
+
+</body>
+</html>
+
+###########
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Mi primera pagina de PHP</h1>
+
+<?php
+echo "Hola mundo!";
+?> 
+
+</body>
+</html>
+
+#################
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+ECHO "Hola mundo!<br>";
+echo "Hola mundo!<br>";
+EcHo "Hola mundo!<br>";
+?> 
+
+</body>
+</html>
+
+############
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$color = "rojo";
+echo "Mi patin es " . $color . "<br>";
+echo "Mi departamento es " . $COLOR . "<br>";
+echo "Mi carro es " . $coLOR . "<br>";
+?> 
+
+</body>
+</html>
+
+
+#########
+
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<?php
+// Comentario ejemplo
+
+# Esto es otro ejemplo de comentario
+
+/* Eejemplo de
+comentario de varias lineas*/
+?>
+ 
+</body>
+</html>
+
+#############
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+echo "Bienvenido!"; // Imprime un mensaje
+?>
+ 
+</body>
+</html>
 
