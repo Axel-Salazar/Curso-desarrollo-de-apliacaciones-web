@@ -1,123 +1,569 @@
-//SECTOR DE ELEMENTOS
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-p {
-  text-align: center;
-  color: green;
+
+Ejemplo 1:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<style>                                   // Inicia una sección de estilos CSS
+h1, h2, p {                               // Aplica el mismo estilo a todos los elementos <h1>, <h2> y <p>
+  text-align: center;                     // Centra el texto horizontalmente
+  color: red;                             // Cambia el color del texto a rojo
+}
+</style>                                  // Termina la sección de estilos CSS
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+<h1>Hola mundo!</h1>                      // Crea un encabezado <h1> rojo y centrado
+<h2>Subtitulo!</h2>                       // Crea un encabezado <h2> rojo y centrado
+<p>Parrafo.</p>                           // Crea un párrafo <p> rojo y centrado
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+Ejemplo 2:
+ <!DOCTYPE html>                    // Declara el tipo de documento como HTML5
+<html>                              // Inicia el documento HTML
+<head>                              // Inicia la sección de la cabecera del documento
+<style>                             // Inicia una sección de estilos CSS
+#para1 {                            // Define un estilo para el elemento con id "para1"
+  text-align: center;               // Centra el texto horizontalmente
+  color: red;                       // Cambia el color del texto a rojo
+}
+</style>                            // Termina la sección de estilos CSS
+</head>                             // Termina la cabecera del documento
+<body>                              // Inicia el cuerpo del documento, donde va el contenido visible
+
+<p id="para1">Hola Mundo!</p>       // Crea un párrafo con id "para1", aplicando el estilo definido
+<p>Este párrafo no es afectado por el estilo.</p> // Crea otro párrafo que no está afectado por el estilo
+
+</body>                             // Termina el cuerpo del documento
+</html>                             // Termina el documento HTML
+
+Ejemplo 3: 
+<!DOCTYPE html>                     // Declara el tipo de documento como HTML5
+<html>                               // Inicia el documento HTML
+<head>                               // Inicia la sección de la cabecera del documento
+<style>                              // Inicia una sección de estilos CSS
+h1 {                                 // Define un estilo para todos los elementos h1
+  color: blue;                       // Cambia el color del texto a azul
+  font-size: 30px;                   // Establece el tamaño de la fuente en 30 píxeles
+}
+p {                                  // Define un estilo para todos los elementos de párrafo <p>
+  color: green;                      // Cambia el color del texto a verde
+  font-family: Arial, sans-serif;    // Establece el tipo de fuente a Arial (o sans-serif si no está disponible)
+}
+</style>                             // Termina la sección de estilos CSS
+</head>                              // Termina la cabecera del documento
+<body>                               // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1>Bienvenidos a mi página</h1>      // Crea un encabezado de primer nivel con el texto "Bienvenidos a mi página"
+<p>Este es un párrafo de ejemplo.</p> // Crea un párrafo con el texto "Este es un párrafo de ejemplo."
+
+</body>                              // Termina el cuerpo del documento
+</html>                              // Termina el documento HTML
+
+Ejemplo 4:
+<!DOCTYPE html>                        // Declara el tipo de documento como HTML5
+<html>                                  // Inicia el documento HTML
+<head>                                  // Inicia la sección de la cabecera del documento
+<style>                                 // Inicia una sección de estilos CSS
+p.center {                              // Define un estilo para los párrafos <p> que tengan la clase "center"
+  text-align: center;                   // Centra el texto horizontalmente
+  color: green;                           // Cambia el color del texto a verde
+}
+</style>                                // Termina la sección de estilos CSS
+</head>                                 // Termina la cabecera del documento
+<body>                                  // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1 class="center">Este encabezado no se verá afectado</h1>    // Crea un encabezado <h1> con clase "center", pero no se aplica el estilo porque solo se definió para <p>
+<p class="center">Este párrafo será verde y estará alineado al centro.</p> // Crea un párrafo <p> con clase "center", aplicando el estilo de color verde y alineación centrada
+
+</body>                                 // Termina el cuerpo del documento
+</html>                                 // Termina el documento HTML
+
+Ejemplo 5:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<style>                                   // Inicia una sección de estilos CSS
+p.center {                                // Define un estilo para los párrafos <p> que tengan la clase "center"
+  text-align: center;                     // Centra el texto horizontalmente
+  color: red;                             // Cambia el color del texto a rojo
+}
+
+p.large {                                 // Define un estilo para los párrafos <p> que tengan la clase "large"
+  font-size: 300%;                        // Establece el tamaño de la fuente al 300% del tamaño normal
+}
+</style>                                  // Termina la sección de estilos CSS
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1 class="center">Este encabezado no se verá afectado</h1>        // Crea un encabezado <h1> con clase "center", pero no se aplica el estilo porque el CSS define solo para <p>
+<p class="center">Este párrafo será rojo y estará alineado al centro.</p> // Crea un párrafo con clase "center", aplicando color rojo y alineación centrada
+<p class="center large">Este párrafo será rojo, alineado al centro y el tamaño de fuente será grande.</p> // Crea un párrafo con las clases "center" y "large", combinando ambos estilos: rojo, centrado y letra grande
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+Ejemplo 6:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<style>                                   // Inicia una sección de estilos CSS
+h1, h2, p {                               // Aplica el mismo estilo a todos los elementos <h1>, <h2> y <p>
+  text-align: center;                     // Centra el texto horizontalmente
+  color: red;                             // Cambia el color del texto a rojo
+}
+</style>                                  // Termina la sección de estilos CSS
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1>Hola Mundo!</h1>                     // Crea un encabezado <h1> rojo y centrado
+<h2>Encabezado más pequeño!</h2>                 // Crea un encabezado <h2> rojo y centrado
+<p>Esto es un párrafo.</p>               // Crea un párrafo <p> rojo y centrado
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+#HOW TO
+Ejemplo 1:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<link rel="stylesheet" href="mystyle.css"> // Vincula un archivo de hoja de estilos externo (mystyle.css) para aplicar estilos
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1>Este es el encabezado</h1>                // Crea un encabezado <h1>
+<p>Este es un párrafo.</p>               // Crea un párrafo <p>
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+Ejemplo 2:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<style>                                   // Inicia una sección de estilos CSS
+body {                                    // Define un estilo para el cuerpo completo del documento
+  background-color: linen;                // Establece el color de fondo a un tono lino claro
+}
+
+h1 {                                      // Define un estilo para todos los encabezados <h1>
+  color: marron;                          // Cambia el color del texto a color marrón oscuro (maroon)
+  margin-left: 40px;                      // Añade un margen a la izquierda de 40 píxeles
 } 
-</style>
-</head>
-<body>
+</style>                                  // Termina la sección de estilos CSS
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
 
-<p>Todos los parrafos cambiaron por el estilo</p>
-<p id="para1">igual yo!</p>
-<p>y yo</p>
+<h1>Esto es un encabezado</h1>                // Crea un encabezado <h1> con color marron y margen izquierdo
+<p>Esto es un párrafo.</p>               // Crea un párrafo <p> que sigue el estilo por defecto (sin cambios)
 
-</body>
-</html>
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
 
-//HOME
+Ejemplo 3:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: lightgreen;
-}
+<h1 style="color:blue;text-align:center;">Esto es un encabezado</h1> 
+                                         // Crea un encabezado <h1> con color azul y texto centrado usando el atributo "style" inline
+<p style="color:red;">Esto es un párrafo</p> 
+                                         // Crea un párrafo <p> con color rojo usando el atributo "style" inline
 
-h1 {
-  color: white;
-  text-align: center;
-}
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
 
-p {
-  font-family: verdana;
-  font-size: 40px;
-}
-</style>
-</head>
-<body>
+Ejemplo 4:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<link rel="stylesheet" type="text/css" href="mystyle.css"> 
+                                          // Vincula un archivo de hoja de estilos externo (mystyle.css) para aplicar estilos
+<style>                                   // Inicia una sección de estilos internos
+body {background-color: linen;}           // Establece el color de fondo del cuerpo a "linen" con estilos internos
+</style>                                  // Termina la sección de estilos internos
+</head>                                   // Termina la cabecera del documento
+<body style="background-color: lavender"> // Establece el color de fondo del cuerpo a "lavender" con un estilo en línea
 
-<h1>Mi primer codigo de css</h1>
-<p>hola.</p>
+<h1>Varios estilos se fusionan en cascada</h1> 
+                                          // Crea un encabezado <h1> con texto
+<p>Aquí, el color de fondo de la página se establece con CSS en línea, y también con un CSS interno, y también con un CSS externo.</p> 
+                                          // Crea un párrafo <p> explicando cómo se aplican los estilos
+<p>Intente experimentar eliminando estilos para ver cómo funcionan las hojas de estilo en cascada (intente eliminar primero el CSS en línea, luego el interno y luego el externo).</p>
+                                          // Crea otro párrafo <p> sugiriendo experimentar con los estilos
 
-</body>
-</html>
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
 
-//INTRODUCTION
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-color: lightblue;
-}
+#COMMENTS
+Ejemplo 1:
 
-h1 {
-  color: black;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-</style>
-</head>
-<body>
-
-<h1>Mi primer ejemplo de CSS</h1>
-<p>hola.</p>
-
-</body>
-</html>
-
-//SYNTAX
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-p {
-  color: blue;
-  text-align: center;
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<style>                                   // Inicia una sección de estilos CSS
+/* Esto es un comentario */       // Comentario de una sola línea en CSS, no se muestra en el navegador
+p {                                       // Define un estilo para todos los elementos de párrafo <p>
+  color: red;                             // Cambia el color del texto de los párrafos a rojo
 } 
-</style>
-</head>
-<body>
+</style>                                  // Termina la sección de estilos CSS
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
 
-<p>Hola mundo!</p>
-<p>estoy trabajando con css.</p>
+<p>¡Hola Mundo!</p>                       // Crea un párrafo <p> que será rojo debido al estilo CSS
+<p>Este párrafo está diseñado con CSS.</p>  // Crea otro párrafo <p> que también será rojo
+<p>El comentario de CSS no se muestra en la salida.</p> // Crea otro párrafo <p>, el comentario CSS no se muestra en el resultado
 
-</body>
-</html>
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
 
-//SELECTORS
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-h1, h2, p {
-  text-align: center;
-  color: red;
+Ejemplo 2:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<head>                                    // Inicia la sección de la cabecera del documento
+<style>                                   // Inicia una sección de estilos CSS
+/* Esto es                                 // Inicia un comentario multi-línea
+un comentario                                // Continúa el comentario en la siguiente línea
+multi-linea */                                 // Termina el comentario multi-línea
+
+p {                                       // Define un estilo para todos los elementos de párrafo <p>
+  color: red;                             // Cambia el color del texto de los párrafos a rojo
+} 
+</style>                                  // Termina la sección de estilos CSS
+</head>                                   // Termina la cabecera del documento
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<p>¡Hola Mundo!</p>                       // Crea un párrafo <p> que será rojo debido al estilo CSS
+<p>Este es un párrafo con estilo de CSS.</p>  // Crea otro párrafo <p> que también será rojo
+<p>El comentario CSS no se muestra a la salida.</p> // Crea otro párrafo <p>, el comentario CSS no se muestra en el resultado
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+
+#COLORS
+Ejemplo 1:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1 style="background-color:DodgerBlue;">Hola Mundo</h1> 
+                                          // Crea un encabezado <h1> con fondo color azul (DodgerBlue) usando estilo en línea
+
+<p style="background-color:Tomato;">      // Crea un párrafo <p> con fondo color tomate (Tomato) usando estilo en línea
+Este es un párrafo color tomate
+</p>                                       // Termina el párrafo
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+Ejemplo 2:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h3 style="color:Tomato;">Hola Mundo</h3> 
+                                          // Crea un encabezado <h3> con el texto en color "Tomate" 
+<p style="color:DodgerBlue;">             // Crea un párrafo <p> con el texto en color "DodgerBlue" (azul brillante)
+Este es un párrafo color azul brillante.</p>              // Termina el primer párrafo
+
+<p style="color:MediumSeaGreen;">          // Crea otro párrafo <p> con el texto en color "MediumSeaGreen" (verde medio marino)
+Este párrafo es color verde medio marino</p>                // Termina el segundo párrafo
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+Ejemplo 3:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1 style="border: 2px solid Tomato;">Hola Mundo</h1> 
+                                          // Crea un encabezado <h1> con un borde sólido de 2 píxeles de color "Tomato" (rojo tomate)
+
+<h1 style="border: 2px solid DodgerBlue;">Hola Mundo</h1> 
+                                          // Crea otro encabezado <h1> con un borde sólido de 2 píxeles de color "DodgerBlue" (azul brillante)
+
+<h1 style="border: 2px solid Violet;">Hola Mundo</h1> 
+                                          // Crea otro encabezado <h1> con un borde sólido de 2 píxeles de color "Violet" (violeta)
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+Ejemplo 4:
+<!DOCTYPE html>                          // Declara el tipo de documento como HTML5
+<html>                                    // Inicia el documento HTML
+<body>                                    // Inicia el cuerpo del documento, donde va el contenido visible
+
+<p>Same as color name "Tomato":</p>       // Muestra un párrafo explicando que el siguiente color es igual a "Tomato"
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1> 
+                                          // Crea un encabezado <h1> con fondo en color RGB equivalente a "Tomato"
+
+<h1 style="background-color:#ff6347;">#ff6347</h1> 
+                                          // Crea un encabezado <h1> con fondo usando el código HEX para "Tomato"
+
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1> 
+                                          // Crea un encabezado <h1> con fondo usando el valor HSL para "Tomato"
+
+<p>Same as color name "Tomato", but 50% transparent:</p>  
+                                          // Muestra un párrafo indicando que ahora se aplicará transparencia
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1> 
+                                          // Crea un encabezado <h1> usando RGBA (RGB + Alpha) con 50% de transparencia
+
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1> 
+                                          // Crea un encabezado <h1> usando HSLA (HSL + Alpha) con 50% de transparencia
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p> 
+                                          // Muestra un párrafo explicando que los colores pueden definirse con nombres, RGB, HEX, HSL, RGBA o HSLA
+
+</body>                                   // Termina el cuerpo del documento
+</html>                                   // Termina el documento HTML
+
+Ejemplo 5:
+<!DOCTYPE html>                                // Declara el tipo de documento como HTML5
+<html>                                          // Inicia el documento HTML
+<body>                                          // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1>Specify colors using RGB values</h1>        // Título principal indicando que se usarán colores con valores RGB
+
+<h2 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h2> 
+                                                 // Subtítulo <h2> con fondo rojo (RGB: rojo máximo, sin verde ni azul)
+
+<h2 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h2> 
+                                                 // Subtítulo <h2> con fondo azul (RGB: azul máximo, sin rojo ni verde)
+
+<h2 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h2> 
+                                                 // Subtítulo <h2> con fondo verde medio (RGB con más verde que rojo y azul)
+
+<h2 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h2> 
+                                                 // Subtítulo <h2> con fondo violeta claro (mezcla de rojo y azul)
+
+<h2 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h2> 
+                                                 // Subtítulo <h2> con fondo naranja (mucho rojo, algo de verde)
+
+<h2 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h2> 
+                                                 // Subtítulo <h2> con fondo azul violeta (mezcla de azul con algo de rojo)
+
+</body>                                          // Termina el cuerpo del documento
+</html>                                          // Termina el documento HTML
+
+Ejemplo 6:
+<!DOCTYPE html>                                  // Declara el tipo de documento como HTML5
+<html>                                            // Inicia el documento HTML
+<body>                                            // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1>Shades of gray</h1>                           // Título principal que dice "Tonos de gris"
+
+<p>By using equal values for red, green, and blue, you will get different shades of gray:</p>  
+                                                   // Párrafo explicativo: usando valores iguales de rojo, verde y azul se logran tonos de gris
+
+<h2 style="background-color:#3c3c3c;">#3c3c3c</h2> 
+                                                   // Subtítulo <h2> con fondo de gris muy oscuro (HEX igual en rojo, verde y azul)
+
+<h2 style="background-color:#616161;">#616161</h2> 
+                                                   // Subtítulo <h2> con fondo gris oscuro (HEX igual en rojo, verde y azul)
+
+<h2 style="background-color:#787878;">#787878</h2> 
+                                                   // Subtítulo <h2> con fondo gris medio (HEX igual en rojo, verde y azul)
+
+<h2 style="background-color:#b4b4b4;">#b4b4b4</h2> 
+                                                   // Subtítulo <h2> con fondo gris claro (HEX igual en rojo, verde y azul)
+
+<h2 style="background-color:#f0f0f0;">#f0f0f0</h2> 
+                                                   // Subtítulo <h2> con fondo gris muy claro (casi blanco)
+
+<h2 style="background-color:#f9f9f9;">#f9f9f9</h2> 
+                                                   // Subtítulo <h2> con fondo casi blanco (gris extremadamente claro)
+
+</body>                                            // Termina el cuerpo del documento
+</html>                                            // Termina el documento HTML
+
+Ejemplo 7:
+<!DOCTYPE html>                                           // Declara el tipo de documento como HTML5
+<html>                                                     // Inicia el documento HTML
+<body>                                                     // Inicia el cuerpo del documento, donde va el contenido visible
+
+<h1>Specify colors using HSL values</h1>                   // Título principal que dice "Especificar colores usando valores HSL"
+
+<h2 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h2>   
+                                                           // Subtítulo <h2> con fondo rojo (matiz 0°, saturación 100%, luminosidad 50%)
+
+<h2 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h2> 
+                                                           // Subtítulo <h2> con fondo azul (matiz 240°, saturación 100%, luminosidad 50%)
+
+<h2 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h2> 
+                                                           // Subtítulo <h2> con fondo verde suave (matiz 147°, saturación 50%, luminosidad 47%)
+
+<h2 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h2> 
+                                                           // Subtítulo <h2> con fondo violeta claro (matiz 300°, saturación 76%, luminosidad 72%)
+
+<h2 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h2> 
+                                                           // Subtítulo <h2> con fondo naranja (matiz 39°, saturación 100%, luminosidad 50%)
+
+<h2 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h2> 
+                                                           // Subtítulo <h2> con fondo azul-violeta medio (matiz 248°, saturación 53%, luminosidad 58%)
+
+</body>                                                    // Termina el cuerpo del documento
+</html>                                                    // Termina el documento HTML
+
+#BACKGROUNDS
+Ejemplo 1:
+<!DOCTYPE html>                                          // Declara el tipo de documento como HTML5
+<html>                                                    // Inicia el documento HTML
+<head>                                                    // Inicia la sección de la cabecera del documento
+<style>                                                   // Inicia una sección de estilos CSS
+
+body {                                                    // Aplica el siguiente estilo al cuerpo de la página
+  background-color: lightblue;                            // Establece el color de fondo del cuerpo a azul claro (light blue)
 }
-</style>
-</head>
-<body>
 
-<h1>Hola mundo!</h1>
-<h2>Subtitulo!</h2>
-<p>Parrafo.</p>
+</style>                                                  // Termina la sección de estilos CSS
+</head>                                                   // Termina la cabecera del documento
+<body>                                                    // Inicia el cuerpo del documento
 
-</body>
-</html>
+<h1>Hola Mundo!</h1>                         // Encabezado principal que dice "Hola Mundo!"
 
+<p>Esta pagina es de color azul claro de fondo!</p>       // Párrafo explicando que la página tiene un fondo azul claro
 
-//
+</body>                                                   // Termina el cuerpo del documento
+</html>                                                   // Termina el documento HTML
+
+Ejemplo 2:
+<!DOCTYPE html>                                          // Declara el tipo de documento como HTML5
+<html>                                                    // Inicia el documento HTML
+<head>                                                    // Inicia la cabecera del documento
+<style>                                                   // Inicia una sección de estilos CSS
+
+h1 {                                                      // Aplica estilo al encabezado h1
+  background-color: green;                                // Establece el color de fondo de h1 a verde
+}
+
+div {                                                     // Aplica estilo al elemento div
+  background-color: lightblue;                            // Establece el color de fondo del div a azul claro
+}
+
+p {                                                       // Aplica estilo a los párrafos
+  background-color: yellow;                               // Establece el color de fondo del párrafo a amarillo
+}
+
+</style>                                                  // Finaliza la sección de estilos CSS
+</head>                                                   // Finaliza la cabecera del documento
+<body>                                                    // Inicia el cuerpo del documento
+
+<h1>Ejemplo de color de fondo en CSS!</h1>         // Encabezado principal con fondo verde
+
+<div>                                                     // Inicia un contenedor div con fondo azul claro
+Este es un texto dentro del elemento div.                     // Texto dentro del div
+<p>Este párrafo tiene su propio color de fondo.</p>       // Párrafo con fondo amarillo dentro del div
+Todavía estamos dentro del elemento div.                         // Más texto dentro del div
+</div>                                                    // Cierra el contenedor div
+
+</body>                                                   // Finaliza el cuerpo del documento
+</html>                                                   // Finaliza el documento HTML
+
+Ejemplo 3:
+<!DOCTYPE html>                                         // Declara el tipo de documento como HTML5
+<html>                                                   // Inicia el documento HTML
+<head>                                                   // Inicia la sección de la cabecera
+<style>                                                  // Inicia una sección de estilos CSS
+
+body {                                                   // Aplica estilos al cuerpo de la página
+  background-image: url("paper.gif");                    // Establece una imagen de fondo llamada "paper.gif" en el body
+}
+</style>                                                 // Termina la sección de estilos CSS
+</head>                                                  // Termina la cabecera
+<body>                                                   // Inicia el cuerpo del documento
+
+<h1>Hola Mundo!</h1>                      // Encabezado principal que dice "Hola Mundo!"
+
+<p>This page has an image as the background!</p>         // Párrafo que informa que la página tiene una imagen como fondo
+
+</body>                                                  // Termina el cuerpo del documento
+</html>                                                  // Termina el documento HTML
+Ejemplo 4:
+<!DOCTYPE html>                                 // Declara el tipo de documento como HTML5
+<html>                                                   // Inicia el documento HTML
+<head>                                                   // Inicia la sección de la cabecera
+<style>                                                  // Inicia una sección de estilos CSS
+
+body {                                                   // Aplica estilos al cuerpo de la página
+  background-image: url("gradient_bg.png");              // Establece una imagen de fondo llamada "gradient_bg.png"
+  background-repeat: repeat-x;                           // Establece que la imagen de fondo se repita solo en el eje horizontal (repite a lo largo de la página de izquierda a derecha)
+}
+
+</style>                                                 // Termina la sección de estilos CSS
+</head>                                                  // Termina la cabecera
+<body>                                                   // Inicia el cuerpo del documento
+
+<h1>Hola Mundo!</h1>                      // Encabezado principal que dice "Hola Mundo!"
+
+<p>Aquí, una imagen que se repite horizontalmente!</p>  // Párrafo explicando que la imagen de fondo se repite sólo horizontalmente
+
+</body>                                                  // Termina el cuerpo del documento
+</html>                                                  // Termina el documento HTML
+
+Ejemplo 5:
+<!DOCTYPE html>                                         // Declara el tipo de documento como HTML5
+<html>                                                   // Inicia el documento HTML
+<head>                                                   // Inicia la sección de la cabecera
+<style>                                                  // Inicia una sección de estilos CSS
+
+body {                                                   // Aplica estilos al cuerpo de la página
+  background-image: url("img_tree.png");                  // Establece una imagen de fondo llamada "img_tree.png"
+  background-repeat: no-repeat;                           // Establece que la imagen de fondo no se repita (solo se muestra una vez)
+  background-position: right top;                         // Coloca la imagen de fondo en la parte superior derecha de la página
+  margin-right: 200px;                                    // Añade un margen de 200px a la derecha, para alejar la imagen del texto
+}
+
+</style>                                                 // Termina la sección de estilos CSS
+</head>                                                  // Termina la cabecera
+<body>                                                   // Inicia el cuerpo del documento
+
+<h1>Hola Mundo!</h1>                      // Encabezado principal que dice "Hola Mundo!"
+
+<p>Aquí, la imagen de fondo solo se muestra una vez. Además, se coloca lejos del texto.</p>  // Párrafo que explica que la imagen de fondo se muestra una sola vez y se coloca lejos del texto
+
+<p>Aquí, la imagen de fondo solo se muestra una vez. Además, se coloca lejos del texto.</p>  // Párrafo que explica que se ha añadido un margen en el lado derecho para que la imagen de fondo no interfiera con el texto
+
+</body>                                                  // Termina el cuerpo del documento
+</html>                                                  // Termina el documento HTML
+
+Ejemplo 6:
+<!DOCTYPE html>                                         // Declara el tipo de documento como HTML5
+<html>                                                   // Inicia el documento HTML
+<head>                                                   // Inicia la sección de la cabecera
+<style>                                                  // Inicia la sección de estilos CSS
+
+body {                                                   // Aplica estilos al cuerpo del documento
+  background-image: url("img_tree.png");                  // Coloca una imagen de fondo ("img_tree.png")
+  background-repeat: no-repeat;                           // No repetir la imagen de fondo
+  background-position: right top;                         // Ubica la imagen en la esquina superior derecha
+  margin-right: 200px;                                    // Deja un margen derecho de 200px
+  background-attachment: fixed;                           // La imagen de fondo se fija y no se mueve al hacer scroll
+}
+
+</style>                                                 // Termina la sección de estilos
+</head>                                                  // Termina la cabecera
+<body>                                                   // Comienza el cuerpo de la página
+
+<h1>The background-attachment Property</h1>              // Encabezado principal
+
+<p>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</p>  
+// Párrafo que explica qué hace la propiedad `background-attachment`
+
+<p><strong>Tip:</strong> If you do not see any scrollbars, try to resize the browser window.</p>  
+// Consejito: si no ves barras de desplazamiento, cambia el tamaño de la ventana
+
+<p>The background-image is fixed. Try to scroll down the page.</p> 
+// De aquí en adelante, muchos párrafos para forzar a que aparezca scroll
+
+(Se repite varias veces para hacer la página lo suficientemente larga para ver el efecto)
+
+</body>                                                  // Termina el cuerpo
+</html>                                                  // Termina el documento HTML
+
 
 
 
